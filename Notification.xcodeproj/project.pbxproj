@@ -15,6 +15,8 @@
 		71E0AB281F84E00A005DE7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E0AB261F84E00A005DE7E5 /* LaunchScreen.storyboard */; };
 		71E0AB331F84E00A005DE7E5 /* NotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E0AB321F84E00A005DE7E5 /* NotificationTests.m */; };
 		71E0AB3E1F84E00A005DE7E5 /* NotificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E0AB3D1F84E00A005DE7E5 /* NotificationUITests.m */; };
+		71E0AB4D1F84E3FF005DE7E5 /* Goverment.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E0AB4C1F84E3FF005DE7E5 /* Goverment.m */; };
+		71E0AB501F84F1CB005DE7E5 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E0AB4F1F84F1CB005DE7E5 /* Doctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		71E0AB391F84E00A005DE7E5 /* NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E0AB3D1F84E00A005DE7E5 /* NotificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationUITests.m; sourceTree = "<group>"; };
 		71E0AB3F1F84E00A005DE7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E0AB4B1F84E3FF005DE7E5 /* Goverment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goverment.h; sourceTree = "<group>"; };
+		71E0AB4C1F84E3FF005DE7E5 /* Goverment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goverment.m; sourceTree = "<group>"; };
+		71E0AB4E1F84F1CB005DE7E5 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		71E0AB4F1F84F1CB005DE7E5 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				71E0AB1B1F84E00A005DE7E5 /* AppDelegate.h */,
 				71E0AB1C1F84E00A005DE7E5 /* AppDelegate.m */,
+				71E0AB4B1F84E3FF005DE7E5 /* Goverment.h */,
+				71E0AB4C1F84E3FF005DE7E5 /* Goverment.m */,
+				71E0AB4E1F84F1CB005DE7E5 /* Doctor.h */,
+				71E0AB4F1F84F1CB005DE7E5 /* Doctor.m */,
 				71E0AB1E1F84E00A005DE7E5 /* ViewController.h */,
 				71E0AB1F1F84E00A005DE7E5 /* ViewController.m */,
 				71E0AB211F84E00A005DE7E5 /* Main.storyboard */,
@@ -274,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E0AB201F84E00A005DE7E5 /* ViewController.m in Sources */,
+				71E0AB4D1F84E3FF005DE7E5 /* Goverment.m in Sources */,
 				71E0AB1D1F84E00A005DE7E5 /* AppDelegate.m in Sources */,
 				71E0AB1A1F84E00A005DE7E5 /* main.m in Sources */,
+				71E0AB501F84F1CB005DE7E5 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

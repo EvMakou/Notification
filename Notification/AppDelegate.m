@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.m
 //  Notification
 //
@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Goverment.h"
+#import "Doctor.h"
 @interface AppDelegate ()
-
+@property(strong, nonatomic) Goverment* goverment;
 @end
 
 @implementation AppDelegate
@@ -17,9 +18,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(govermentNotification:) name:GovermentTaxLevelDidChangeNotification object:nil];
+
+    
+    self.goverment = [[Goverment alloc]init];
+    
+    Doctor* doctor1 = [[Doctor alloc]init];
+    Doctor* doctor2 = [[Doctor alloc]init];
+    Doctor* doctor3 = [[Doctor alloc]init];
+    Doctor* doctor4 = [[Doctor alloc]init];
+    Doctor* doctor5 = [[Doctor alloc]init];
+    
+    doctor1.salary = doctor2.salary = doctor3.salary = doctor4.salary = doctor5.salary = self.goverment.salary;
+    
+    self.goverment.taxLevel = 5.5;
+    self.goverment.salary = 1100;
+    self.goverment.averagePrice = 15;
+    self.goverment.pension = 550;
+    
+    self.goverment.salary = 1050;
+    
+    self.goverment.salary = 1150;
+    
+    self.goverment.salary = 900;
+    
+    
     return YES;
 }
 
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) govermentNotification:(NSNotification*) notification {
+    NSLog(@"govermentNotification userInfo = %@",notification.userInfo);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
